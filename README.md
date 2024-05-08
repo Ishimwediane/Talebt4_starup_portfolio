@@ -5,8 +5,14 @@ Gate Guard Visitor Notification System
 
 Objective: Develop a system to facilitate communication between visitors and homeowners at a gated property. The system will allow visitors to notify the homeowner of their presence, and the homeowner to send messages to the visitor to either wait or indicate that they are unavailable.
 
-1. System Overview
-The system allows a visitor to press a button at a gate to notify the homeowner of their arrival. The homeowner can then respond, either by pressing a button to send a predefined SMS message to the visitor or by sending a custom SMS message to communicate further. Additionally, if the visitor does not receive a response within a certain time, an SMS alert is sent to the house.
+This system is designed to streamline communication between visitors and homeowners at gated properties, enhancing security and responsiveness. It utilizes a combination of a push button, a sound alert, SMS messaging, and an OLED display to ensure effective visitor notification and homeowner response.
+
+How It Works:
+
+Visitor Alert: A visitor at the gate can press a button to alert the household of their arrival. This triggers an audible sound inside the house, notifying anyone at home that there is someone at the gate.
+Homeowner Response: If someone is at home, they can press a button to send a predefined SMS message to the visitor. The message appears on an OLED display at the gate and informs the visitor to "just wait a little bit."
+Backup Notification: If no one is available to respond to the visitor's alert, the system automatically sends an SMS message to the homeowner, indicating that there's a person at the gate requesting entry. This message enables the homeowner to either contact a family member who is nearby or respond to the visitor with a custom SMS indicating that "sorry, there's no one around." This custom message is also displayed on the OLED at the gate.
+
 
 2. Key Components
 - Microcontroller: At the heart of the system, responsible for managing button inputs, sending and receiving SMS, and controlling the system's logic. we will use ESP 32
